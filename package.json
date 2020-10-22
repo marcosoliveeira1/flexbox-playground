@@ -1,6 +1,6 @@
 {
     "name": "flexbox-playground",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "repository": "https://github.com/marcosoliveeira1/flexbox-playground.git",
     "author": "Marcos Oliveira <marcos.oliveira@incuca.com.br>",
     "license": "MIT",
@@ -14,6 +14,6 @@
         "start": "concurrently 'yarn sass:watch' 'yarn serve'",
         "sass:watch": "sass --watch src/css/styles.scss src/css/styles.css",
         "serve": "lite-server browser-sync --baseDir='src'",
-        "publish":"/node_modules/.bin/gh-pages -d build"
+        "deploy": "./node_modules/.bin/gh-pages -d src"
     }
 }
