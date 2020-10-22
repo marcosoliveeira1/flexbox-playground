@@ -1,8 +1,18 @@
 {
-  "name": "flexbox-playground",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/marcosoliveeira1/flexbox-playground.git",
-  "author": "Marcos Oliveira <marcos.oliveira@incuca.com.br>",
-  "license": "MIT"
+    "name": "flexbox-playground",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/marcosoliveeira1/flexbox-playground.git",
+    "author": "Marcos Oliveira <marcos.oliveira@incuca.com.br>",
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^5.3.0",
+        "lite-server": "^2.5.4",
+        "sass": "^1.27.0"
+    },
+    "scripts": {
+        "start": "concurrently 'yarn sass:watch' 'yarn serve'",
+        "sass:watch": "sass --watch src/css/styles.scss src/css/styles.css",
+        "serve": "lite-server browser-sync --baseDir='src'"
+    }
 }
