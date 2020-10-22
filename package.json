@@ -13,6 +13,7 @@
     "scripts": {
         "start": "concurrently 'yarn sass:watch' 'yarn serve'",
         "sass:watch": "sass --watch src/css/styles.scss src/css/styles.css",
-        "serve": "lite-server browser-sync --baseDir='src'"
+        "serve": "lite-server browser-sync --baseDir='src'",
+        "publish":"/node_modules/.bin/gh-pages -d build"
     }
 }

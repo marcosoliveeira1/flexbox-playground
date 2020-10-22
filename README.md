@@ -1,5 +1,7 @@
 # Flexbox Playground
 
+[live demo](https://marcosoliveeira1.github.io/flexbox-playground/)
+
 ## Installation
 ``` 
 yarn
@@ -9,7 +11,6 @@ yarn
 ``` 
 yarn start
 ``` 
-
 
 
 ## Inspirations
