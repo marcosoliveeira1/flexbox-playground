@@ -1,7 +1,6 @@
 {
     "name": "flexbox-playground",
     "version": "1.0.0",
-    "main": "index.js",
     "repository": "https://github.com/marcosoliveeira1/flexbox-playground.git",
     "author": "Marcos Oliveira <marcos.oliveira@incuca.com.br>",
     "license": "MIT",
