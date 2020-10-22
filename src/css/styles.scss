@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$dark-color: #222;
+$primary-color: #42a5f5;
+$success-color: #26a69a;
+$warning-color: #ec407a;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: $dark-color;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba($color: #fff, $alpha: 0.05);
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 40px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 20px;
+        border-bottom: 1px solid #cccccc;
+
+        .input-group {
+            flex-basis: 30%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            label {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            select {
+                padding: 10px;
+                border: 0;
+                border-radius: 4px;
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        background-color: $dark-color;
+
+        button {
+            padding: 10px 20px;
+            border: 0;
+            font-size: 16px;
+            color: #fff;
+            border-radius: 4px;
+            box-shadow: 1px 1px 4px #000;
+            margin-right: 20px;
+            cursor: pointer;
+
+            &.add {
+                background-color: $success-color;
+            }
+            &.remove {
+                background-color: $warning-color;
+            }
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    .demo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: flex-start;
+        height: 500px;
+        padding: 20px;
+        background-color: $dark-color;
+
+        &.flex-direction-row { flex-direction: row; }
+        &.flex-direction-row-reverse { flex-direction: row-reverse; }
+        &.flex-direction-column { flex-direction: column; }
+        &.flex-direction-column-reverse { flex-direction: column-reverse; }
+        
+        &.flex-wrap-wrap { flex-wrap: wrap; }
+        &.flex-wrap-nowrap { flex-wrap: nowrap; }
+       
+        &.align-items-flex-start { align-items: flex-start}
+        &.align-items-flex-end { align-items: flex-end}
+        &.align-items-center { align-items: center}
+        
+        &.align-content-flex-start { align-content: flex-start}
+        &.align-content-flex-end { align-content: flex-end}
+        &.align-content-center { align-content: center}
+        &.align-content-space-around { align-content: space-around}
+        &.align-content-space-between { align-content: space-between}
+        &.align-content-space-evenly { align-content: space-evenly}
+
+        &.justify-content-flex-start { justify-content: flex-start}
+        &.justify-content-flex-end { justify-content: flex-end}
+        &.justify-content-center { justify-content: center}
+        &.justify-content-space-around { justify-content: space-around}
+        &.justify-content-space-between { justify-content: space-between}
+        &.justify-content-space-evenly { justify-content: space-evenly}
+
+
+        .square {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $primary-color;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            font-size: 40px;
+            border-radius: 4px;
+        }
+    }
+}

@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+main h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 40px;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  border-bottom: 1px solid #cccccc;
+}
+
+main form .input-group {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+main form .input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+main form .input-group select {
+  padding: 10px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+main .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px;
+  background-color: #222;
+}
+
+main .buttons button {
+  padding: 10px 20px;
+  border: 0;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 4px #000;
+          box-shadow: 1px 1px 4px #000;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+main .buttons button.add {
+  background-color: #26a69a;
+}
+
+main .buttons button.remove {
+  background-color: #ec407a;
+}
+
+main .buttons button:hover {
+  opacity: 0.8;
+}
+
+main .demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 500px;
+  padding: 20px;
+  background-color: #222;
+}
+
+main .demo.flex-direction-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .demo.flex-direction-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+main .demo.flex-direction-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .demo.flex-direction-column-reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+main .demo.flex-wrap-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .demo.flex-wrap-nowrap {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+main .demo.align-items-flex-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .demo.align-items-flex-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .demo.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .demo.align-content-flex-start {
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+main .demo.align-content-flex-end {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+main .demo.align-content-center {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .demo.align-content-space-around {
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+main .demo.align-content-space-between {
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+main .demo.align-content-space-evenly {
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+main .demo.justify-content-flex-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .demo.justify-content-flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .demo.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .demo.justify-content-space-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .demo.justify-content-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .demo.justify-content-space-evenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .demo .square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #42a5f5;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  font-size: 40px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=styles.css.map */
