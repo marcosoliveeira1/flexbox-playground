@@ -1,12 +1,14 @@
 # Flexbox Playground
 
 ## Installation
-```bash
+``` 
 yarn
+``` 
 
 ## Usage
-```bash
+``` 
 yarn start
+``` 
 
 
 
