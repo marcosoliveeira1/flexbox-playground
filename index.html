@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Playground</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="dark-mode">
+
+    <header>
+        <h1>Flexbox Playground</h1>
+    </header>
+    <aside>
+        <section class="buttons">
+            <button class="add">Add</button>
+            <button class="remove">Remove</button>
+        </section>
+        <form>
+            <div class="input-group">
+                <label for="flex-direction">Flex direction</label>
+                <select id="flex-direction">
+                    <option>row</option>
+                    <option>column</option>
+                    <option>row-reverse</option>
+                    <option>column-reverse</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="flex-wrap">Flex wrap</label>
+                <select id="flex-wrap">
+                    <option>nowrap</option>
+                    <option>wrap</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="justify-content">Justify content</label>
+                <select id="justify-content">
+                    <option>flex-start</option>
+                    <option>flex-end</option>
+                    <option>center</option>
+                    <option>space-around</option>
+                    <option>space-between</option>
+                    <option>space-evenly</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="align-items">Align items</label>
+                <select id="align-items">
+                    <option>flex-start</option>
+                    <option>flex-end</option>
+                    <option>center</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="align-content">Align content</label>
+                <select id="align-content">
+                    <option>flex-start</option>
+                    <option>flex-end</option>
+                    <option>center</option>
+                    <option>space-around</option>
+                    <option>space-between</option>
+                    <option>space-evenly</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="switch">
+            </div>
+        </form>
+    </aside>
+    <main>        
+        <section class="demo">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+            <div class="square">4</div>
+            <div class="square">5</div>
+        </section>
+    </main>
+    <script src="js/scripts.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+
+</html>
