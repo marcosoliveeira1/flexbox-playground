@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <main>
+<body class="dark-mode">
+    <header>
         <h1>Flexbox Playground</h1>
+    </header>
+    <aside>
+        <section class="buttons">
+            <button class="add">Add</button>
+            <button class="remove">Remove</button>
+        </section>
         <form>
             <div class="input-group">
                 <label for="flex-direction">Flex direction</label>
@@ -47,7 +53,7 @@
                     <option>center</option>
                 </select>
             </div>
-            
+
             <div class="input-group">
                 <label for="align-content">Align content</label>
                 <select id="align-content">
@@ -59,12 +65,12 @@
                     <option>space-evenly</option>
                 </select>
             </div>
-            
+            <div class="input-group">
+                <input type="checkbox" id="switch">
+            </div>
         </form>
-        <section class="buttons">
-            <button class="add">Add</button>
-            <button class="remove">Remove</button>
-        </section>
+    </aside>
+    <main>        
         <section class="demo">
             <div class="square">1</div>
             <div class="square">2</div>
@@ -73,7 +79,8 @@
             <div class="square">5</div>
         </section>
     </main>
-<script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 
 </html>
